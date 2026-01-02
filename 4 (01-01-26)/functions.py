@@ -198,6 +198,12 @@ what is local variable?
 local variable is a variable which is accessible only inside the function.
 '''
 
+#*args example
+def add(*args):
+    return sum(args)
+
+print(add(1,2,3,4,5,6,7,8,9))
+
 #kwargs for variable number of keyword arguments
 def show_info(**info):
     for key, value in info.items():
@@ -213,7 +219,7 @@ def myfunction():
 
 myfunction()
 '''              
-print(x) #error! is define inside "myfunction" so it is not accessible outside
+print(x) #error! x is define inside "myfunction" so it is not accessible outside
 
 '''
 
@@ -226,7 +232,7 @@ def myfunc():
 myfunc()
 print(a)
 '''
-print(b) #error! is define inside "myfunc" so it is not accessible outside
+print(b) #error! b is define inside "myfunc" so it is not accessible outside
 '''
 
 #atm withdrawl using function
@@ -243,11 +249,6 @@ def withdraw(amount):
 cash = int(input("Enter the amount to withdraw: "))
 withdraw(cash)
 
-'''
-What is pass statement?
-pass statement is used as a placeholder for future code.
-It is used when a statement is required syntactically but you do not want any code to be executed.
-'''
 #using pass example
 def myfunct():
     pass
