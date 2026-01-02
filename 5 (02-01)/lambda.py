@@ -19,25 +19,25 @@ syntax:
     lambda arguments: expression
 '''
 
-# #square of a number using lambda function
-# square = lambda x: x*x
-# print(square(5))
+#square of a number using lambda function
+square = lambda x: x*x
+print(square(5))
 
-# #lambda function V/S normal function
-# def add(a,b): #normal function
-#     return a+b
-# print(add(3,4))
+#lambda function V/S normal function
+def add(a,b): #normal function
+    return a+b
+print(add(3,4))
 
-# add_lambda = lambda a,b: a+b #lambda function
-# print(add_lambda(3,4))
+add_lambda = lambda a,b: a+b #lambda function
+print(add_lambda(3,4))
 
-# #pass multiple value return in lambda function
-# cal=lambda x,y:(x+y, x-y, x*y, x/y)
-# q,r,s,t=cal(10,5)
-# print("Addition:",q)
-# print("Subtraction:",r)
-# print("Multiplication:",s)
-# print("Division:",t)
+#pass multiple value return in lambda function
+cal=lambda x,y:(x+y, x-y, x*y, x/y)
+q,r,s,t=cal(10,5)
+print("Addition:",q)
+print("Subtraction:",r)
+print("Multiplication:",s)
+print("Division:",t)
 
 #default keyword argument in lambda function
 de_lam= lambda x, y=2: x+y

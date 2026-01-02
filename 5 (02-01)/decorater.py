@@ -21,58 +21,58 @@ Decorator Syntax:
         # function body
 '''
 
-# # Example of using decorator function
-# def first_decorator(say_hello):
-#     def wrapper():
-#         print("Before calling hello")
-#         say_hello()
-#         print("After calling hello")
-#     return wrapper
-# def second_decorator(say_hello):
-#     def wrapper():
-#         print("Before calling hello")
-#         say_hello()
-#         print("After calling hello")
-#     return wrapper
+# Example of using decorator function
+def first_decorator(say_hello):
+    def wrapper():
+        print("Before calling hello")
+        say_hello()
+        print("After calling hello")
+    return wrapper
+def second_decorator(say_hello):
+    def wrapper():
+        print("Before calling hello")
+        say_hello()
+        print("After calling hello")
+    return wrapper
 
-# #covert lower to upper case
-# def convert_to_uppercase(func):
-#     def wrapper():
-#         result = func()
-#         modified = result.upper()
-#         return modified
-#     return wrapper
+#covert lower to upper case
+def convert_to_uppercase(func):
+    def wrapper():
+        result = func()
+        modified = result.upper()
+        return modified
+    return wrapper
 
-# @convert_to_uppercase
-# def greet():
-#     return "ole ole.. hello helo.. ole ole" 
-# print(greet())
+@convert_to_uppercase
+def greet():
+    return "ole ole.. hello helo.. ole ole" 
+print(greet())
 
-# #covert to lower case
-# def convert_to_lowercase(func):
-#     def wrapper():
-#         result = func()
-#         modified = result.lower()
-#         return modified
-#     return wrapper
+#covert to lower case
+def convert_to_lowercase(func):
+    def wrapper():
+        result = func()
+        modified = result.lower()
+        return modified
+    return wrapper
 
-# @convert_to_lowercase
-# def greet():
-#     return "OLE OLE.. HELLO HELO.. OLE OLE" 
-# print(greet())
+@convert_to_lowercase
+def greet():
+    return "OLE OLE.. HELLO HELO.. OLE OLE" 
+print(greet())
 
-# #addition of two numbers using decorator
-# def decorator_add(func):
-#     def wrapper(a,b):
-#         print("Adding", a, "and", b)
-#         return func(a,b)
-#     return wrapper
+#addition of two numbers using decorator
+def decorator_add(func):
+    def wrapper(a,b):
+        print("Adding", a, "and", b)
+        return func(a,b)
+    return wrapper
 
-# def add(a,b):
-#     return a+b
+def add(a,b):
+    return a+b
 
-# add = decorator_add(add)
-# print(add(10,20))
+add = decorator_add(add)
+print(add(10,20))
 
 #check athentication before showing Dashboard
 def login_required(func):
