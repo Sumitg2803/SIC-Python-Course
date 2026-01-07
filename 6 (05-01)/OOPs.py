@@ -36,6 +36,9 @@ d.ni()
 d.king()
 
 #multilevel inheritance
+'''
+multilevel inheritance is a type of inheritance where child class inherit property from parent class and parent class inherit property from grand parent class
+'''
 class GrandFather():
     def abc(self):
         print("I am god father")
@@ -68,11 +71,10 @@ class child(father):
     def abc(self):
         print("Child ka paisa nhi hai")
 
+
 ob=child()
 ob.abc()
 ob.skills()
-
-
 
 #hierarchy inheritance
 '''
@@ -187,3 +189,65 @@ class child(parent):
         print("Child constructor")
 
 ob=child()
+
+
+##### 06-01-2026 #####
+'''
+**What is Abstraction?
+    *Abstraction means hinding the internal implementation and only showing only essential features to the user
+    *Reduces the complexity of the code
+    *Increases the security of the code
+    *Easy to understand
+    *Easy to maintain
+    *Easy to update
+    *Easy to debug
+    *Easy to read
+    *Easy to write
+    *Easy to implement
+    *Easy to test
+    *Easy to debug
+    *improves modularity
+
+**What is modularity?
+    *Modularity means breaking down the code into smaller, independent, and reusable components
+'''
+#example
+def sub():
+    a=int(input("Enter a number: "))
+    b=int(input("Enter a number: "))
+    return a-b
+
+def add():
+    a=int(input("Enter a number: "))
+    b=int(input("Enter a number: "))
+    return a+b
+
+def mul():
+    a=int(input("Enter a number: "))
+    b=int(input("Enter a number: "))
+    return a*b
+
+def div():
+    a=int(input("Enter a number: "))
+    b=int(input("Enter a number: "))
+    return a/b
+
+while True:
+    print("1. Add")
+    print("2. Sub")
+    print("3. Mul")
+    print("4. Div")
+    print("5. Exit")
+    ch=int(input("Enter your choice: "))
+    if ch==1:
+        print(add())
+    elif ch==2:
+        print(sub())
+    elif ch==3:
+        print(mul())
+    elif ch==4:
+        print(div())
+    elif ch==5:
+        break
+    else:
+        print("Invalid choice")
