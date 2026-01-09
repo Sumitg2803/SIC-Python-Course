@@ -31,7 +31,7 @@ with open("example.txt", "r") as file:
 
 #write file
 with open("example.txt", "w") as file:
-    file.write("Hello World! Welcome to Python \nlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.")
+    file.write("\nHello World! Welcome to Python \nlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.")
 
 #append file
 with open("example.txt", "a") as file:

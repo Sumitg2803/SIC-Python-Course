@@ -55,3 +55,7 @@ print(a.count("p"))  # 4
 #string split
 a = "hello,world,python"
 print(a.split(","))  # ['hello', 'world', 'python']
+
+str3 ="pcu"
+str3[0] = "c"
+print (str3)
